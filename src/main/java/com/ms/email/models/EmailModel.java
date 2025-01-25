@@ -1,16 +1,14 @@
 package com.ms.email.models;
 
 import com.ms.email.enums.StatusEmail;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.UUID;
 
+@Entity
 @Table(name = "tb_email")
 public class EmailModel implements Serializable {
 
